@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                   height: 40,
                   // padding: const EdgeInsets.all(10),'
                   color: _selectedIndex == 0
-                      ? Color.fromARGB(255, 2, 34, 102)
+                      ? const Color.fromARGB(255, 2, 34, 102)
                       : const Color.fromRGBO(247, 250, 252, 1),
                   child: Center(
                     child: IconButton(

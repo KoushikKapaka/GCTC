@@ -16,52 +16,52 @@ class _ProfileState extends State<Profile> {
           Container(
             color: const Color.fromARGB(255, 12, 64, 176),
             width: MediaQuery.of(context).size.width,
-            child: SafeArea(
+            child: const SafeArea(
               child: Column(
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     height: 5,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     backgroundImage: NetworkImage(
                         "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars.png"),
                     radius: 60,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 5,
                   ),
-                  const Text(
+                  Text(
                     "Username",
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.w500,
                         color: Colors.white),
                   ),
-                  const Text(
+                  Text(
                     "RollNumber",
                     style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.w400,
                         color: Colors.white),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 8,
                   ),
                 ],
               ),
             ),
           ),
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width,
-            child: SafeArea(
+            child: const SafeArea(
                 child: Column(
               children: [
-                const Text(
+                Text(
                   "Account info",
                   style: TextStyle(fontSize: 30),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 30,
                 ),
                 // Full Name widget
@@ -69,26 +69,26 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       width: 30,
                     ),
-                    const Icon(Icons.person_outline),
-                    const SizedBox(
+                    Icon(Icons.person_outline),
+                    SizedBox(
                       width: 50,
                     ),
-                    const Text("Full Name"),
+                    Text("Full Name"),
                   ],
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Divider(
+                Divider(
                   color: Colors.grey,
                   thickness: 2,
                   indent: 10,
                   endIndent: 10,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 // Mobile
@@ -96,26 +96,26 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       width: 30,
                     ),
-                    const Icon(Icons.phone_android_rounded),
-                    const SizedBox(
+                    Icon(Icons.phone_android_rounded),
+                    SizedBox(
                       width: 50,
                     ),
-                    const Text("Mobile Number"),
+                    Text("Mobile Number"),
                   ],
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Divider(
+                Divider(
                   color: Colors.grey,
                   thickness: 2,
                   indent: 10,
                   endIndent: 10,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 // Email
@@ -123,26 +123,26 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       width: 30,
                     ),
-                    const Icon(Icons.mail),
-                    const SizedBox(
+                    Icon(Icons.mail),
+                    SizedBox(
                       width: 50,
                     ),
-                    const Text("Mail Id"),
+                    Text("Mail Id"),
                   ],
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Divider(
+                Divider(
                   color: Colors.grey,
                   thickness: 2,
                   indent: 10,
                   endIndent: 10,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 // Department
@@ -150,20 +150,20 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       width: 30,
                     ),
-                    const Icon(Icons.category_outlined),
-                    const SizedBox(
+                    Icon(Icons.category_outlined),
+                    SizedBox(
                       width: 50,
                     ),
-                    const Text("Department"),
+                    Text("Department"),
                   ],
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Divider(
+                Divider(
                   color: Colors.grey,
                   thickness: 2,
                   indent: 10,
@@ -175,15 +175,15 @@ class _ProfileState extends State<Profile> {
           const SizedBox(height: 30),
           ElevatedButton(
             onPressed: () {},
-            child: Text("Log out"),
             style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(Color.fromARGB(255, 37, 8, 198)),
+                    MaterialStateProperty.all(const Color.fromARGB(255, 37, 8, 198)),
                 padding: MaterialStateProperty.all(const EdgeInsets.all(15)),
                 textStyle: MaterialStateProperty.all(
                   const TextStyle(fontSize: 15),
                 ),
                 fixedSize: MaterialStateProperty.all(const Size(200, 60))),
+            child: const Text("Log out"),
           ),
         ],
       ),
