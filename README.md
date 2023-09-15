@@ -1,6 +1,6 @@
-# proj
+# GCTC Portal Mobile App
 
-A new Flutter project.
+A Flutter project to convert the website to app.
 
 ## Getting Started
 
